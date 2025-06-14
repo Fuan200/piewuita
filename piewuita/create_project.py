@@ -7,7 +7,9 @@ import subprocess
 def create_project(project_name, modules):
     os.makedirs(f'{project_name}', exist_ok=True)
 
-    gitignore_template = os.path.join(os.path.dirname(__file__), 'templates', '.gitignore')
+    templates_dir = os.path.join(os.path.dirname(__file__), 'templates')
+    gitignore_template = os.path.join(templates_dir, '.gitignore')
+    pyproject_template = os.path.join(templates_dir, 'pyproject.toml')
 
     files = {
         f'{project_name}/main.py' : f"# main.py\n\ndef main():\n\tpass\n\nif __name__ == '__main__':\n    main()",
@@ -19,6 +21,7 @@ def create_project(project_name, modules):
             f.write(content)
 
     shutil.copy(gitignore_template, f'{project_name}/.gitignore')
+    shutil.copy(pyproject_template, f'{project_name}/pyproject.toml')
 
     venv_path = os.path.join(project_name, "venv")
     pip_executable = os.path.join(venv_path, "bin", "pip")
