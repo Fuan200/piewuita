@@ -57,4 +57,4 @@ piewuita -n new_project -m Flask requests pandas
 
 ## Author
 
-:blue_heart: **Juan Antonio Díaz Fernández** - [Fuan200](https://github.com/Fuan200)
+:blue_heart: **Juan Díaz** - [Fuan200](https://github.com/Fuan200)
