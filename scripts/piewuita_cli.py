@@ -5,7 +5,7 @@ import argparse
 from piewuita.create_project import create_project
 
 def main():
-    parser = argparse.ArgumentParser(description="Create a new project in Python..")
+    parser = argparse.ArgumentParser(description="Create a new project in Python...")
     parser.add_argument(
         "-n","--name",
         required=True,
