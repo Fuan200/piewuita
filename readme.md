@@ -14,15 +14,26 @@ This is a library to init a python projects.
 
 ## Installation
 
+### Install the library
+
+```bash
+pip install piewuita
+```
+
+### Install to development
+
+```bash
+git clone git@github.com:Fuan200/piewuita.git
+cd piewuita
+# optional create a virtual environment
+pip install -e .
+```
+
 ### Pip with repo
 
 ``` bash
 pip install git+https://github.com/Fuan200/piewuita.git
 ```
-
-### Install the library
-
-Comming soon
 
 ## Usage
 
@@ -53,7 +64,7 @@ piewuita -n new_project -m Flask requests pandas
 ## OS
 
 * Linux
-* Windows (comming soon)
+* MacOS ?
 
 ## Author
 
